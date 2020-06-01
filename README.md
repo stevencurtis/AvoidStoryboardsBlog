@@ -21,3 +21,5 @@ Storyboards: A visual representation of the User Interface of an Application
 
 ## The challenge
 Once you have created a [Single View Application](https://medium.com/swlh/your-first-ios-application-using-xcode-9983cf6efb71) you are presented with something like the following image 
+
+![Xcode image](Screenshot 2020-06-01 at 14.54.25.png)<br/>
