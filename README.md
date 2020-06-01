@@ -54,7 +54,7 @@ In order to do this, we can just delete the `Main.storyboard` file with the frie
 ## Remove references to storyboard
 There is a link to the storyboard in the pList file AND in the deployment info. We don't want either of those, so we are going to get rid of them with our delete-me-do button.
 
-### Deployment info reference
+### Remove Deployment info reference
 When you select the target on the left-hand side of the project inspector then you will see a dropdown saying *Main* now (and pay attention) GET RID of it. Another delete will get rid of the link. No problem (right?).
 ![DeploymentInfo](images/DeploymentInfo.png)
 
@@ -69,7 +69,7 @@ Yes - I did find it tricky to select a deleted row, so there isn't too much I ca
 ## Point the code to the rootViewController
 `scene(_:willConnectTo:options:)` needs to be adjusted. By adjusted, I do of course mean that we need to change the entire body of the function.
 The function lives in the SceneDelegate.swift file, which can also be selected from the files on the left-hand side of the project. 
-When you've got that selected our target function will be at the top of the file) - jsut replace it with the following:
+When you've got that selected our target function will be at the top of the file) - just replace it with the following:
 
 ![sceneWillConnect](images/sceneWillConnect.png)
 
