@@ -49,11 +49,11 @@ DetailUIView<br />
 
 ## Getting rid of the storyboard
 In order to do this, we can just delete the `Main.storyboard` file with the friendly-looking backspace key on your keyboard. Just select the file, then press delete. I know you can do it. GO ON.
-![DeleteStoryboard](images/DeleteStoryboard.gif)
+![Movies](Movies/DeleteStoryboard.gif)
 
 ## Remove references to storyboard
 There is a link to the storyboard in the pList file AND in the deployment info. We don't want either of those, so we are going to get rid of them with our delete-me-do button.
-![Movies](Movies/DeleteStoryboard.gif)
+
 ### Deployment info reference
 When you select the target on the left-hand side of the project inspector then you will see a dropdown saying *Main* now (and pay attention) GET RID of it. Another delete will get rid of the link. No problem (right?).
 ![DeploymentInfo](images/DeploymentInfo.png)
