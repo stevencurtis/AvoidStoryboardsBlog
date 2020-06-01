@@ -14,10 +14,10 @@ Difficulty: Beginner | **Easy** | Normal | Challenging
 This article has been developed using Xcode 11.4.1, and Swift 5.2.2
 
 ## Prerequisites: 
-* This article has been written to allow you to write code using loadView() like in my [article](https://medium.com/@stevenpcurtis.sc/write-clean-code-by-overriding-loadview-ac4f172163d0) featuring Playgrounds. You will be expected to be aware how to make a [Single View Application] (https://medium.com/swlh/your-first-ios-application-using-xcode-9983cf6efb71) in Swift.
+* This article has been written to allow you to write code using loadView() like in my [article](https://medium.com/@stevenpcurtis.sc/write-clean-code-by-overriding-loadview-ac4f172163d0) featuring Playgrounds. You will be expected to be aware how to make a [Single View Application](https://medium.com/swlh/your-first-ios-application-using-xcode-9983cf6efb71) in Swift.
 
 ## Terminology
 Storyboards: A visual representation of the User Interface of an Application
 
 ## The challenge
-Once you have created a [Single View Application] (https://medium.com/swlh/your-first-ios-application-using-xcode-9983cf6efb71) you are presented with something like the following image 
+Once you have created a [Single View Application](https://medium.com/swlh/your-first-ios-application-using-xcode-9983cf6efb71) you are presented with something like the following image 
