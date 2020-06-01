@@ -2,7 +2,7 @@
 ## Get rid of Xcode's boilerplate
 
 ![Photo by Jamie Street on Unsplash](images/jamiestreetunsplash.jpg)
-
+<sub>Photo by Jamie Street on Unsplash<sub>
 
 Difficulty: Beginner | **Easy** | Normal | Challenging
 
