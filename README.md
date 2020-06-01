@@ -4,7 +4,7 @@
 ![Photo by Jamie Street on Unsplash](images/jamiestreetunsplash.jpg)<br/>
 <sub>Photo by Jamie Street on Unsplash<sub>
 
-I've written an article [article](https://medium.com/@stevenpcurtis.sc/write-clean-code-by-overriding-loadview-ac4f172163d0) spelling out the advantages of using loadView() instead of using Storyboards. This is great, and people appreciate the artilce. 
+I've written an  [article](https://medium.com/@stevenpcurtis.sc/write-clean-code-by-overriding-loadview-ac4f172163d0) spelling out the advantages of using loadView() instead of using Storyboards. This is great, and people appreciate the article. 
 
 The problem? The article works with Playgrounds and a Single View Application in Xcode assumes that you are going to use a Storyboard, and deleting it gives an error. What a mistake.
 
