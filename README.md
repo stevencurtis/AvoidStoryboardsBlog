@@ -1,7 +1,7 @@
 # Avoid Storyboards in Your Apps!
 ## Get rid of Xcode's boilerplate
 
-![Photo by Jamie Street on Unsplash](images/jamiestreetunsplash.jpg)<br/>
+![Photo by Jamie Street on Unsplash](Images/jamiestreetunsplash.jpg)<br/>
 <sub>Photo by Jamie Street on Unsplash<sub>
 
 I've written an  [article](https://medium.com/@stevenpcurtis.sc/write-clean-code-by-overriding-loadview-ac4f172163d0) spelling out the advantages of using loadView() instead of using Storyboards. This is great, and people appreciate the article. 
@@ -22,7 +22,7 @@ Storyboards: A visual representation of the User Interface of an Application
 ## The challenge
 Once you have created a [Single View Application](https://medium.com/swlh/your-first-ios-application-using-xcode-9983cf6efb71) you are presented with something like the following image:
 
-![Xcode image](images/XcodeSingleView.png)
+![Xcode image](Images/XcodeSingleView.png)
 
 What's the problem? Can you see on the left hand side? Beside the *projects*? We have a Storyboard there - and the whole point is we aren't going to be using it. If we delete it, we won't get any further than a blank screen on the Simulator followed by an **NSInvalidArgumentException**. That's not great at all.
 
@@ -35,16 +35,16 @@ I'm going to arrange my classes much like the [loadview article](https://medium.
 I can list the code for these classes (now I prefer to download these from the [Repo](https://github.com/stevencurtis/AvoidStoryboardsBlog) but there you go), but I'm leaving the explaination with the original article [loadview article](https://medium.com/@stevenpcurtis.sc/write-clean-code-by-overriding-loadview-ac4f172163d0) as these are basically just created to give us some code to test during the process. In other words, don't panic!
 
 ViewController<br />
-![ViewController](images/ViewController.png)
+![ViewController](Images/ViewController.png)
 
 DetailViewController<br />
-![DetailViewController](images/DetailViewController.png)
+![DetailViewController](Images/DetailViewController.png)
 
 ButtonView<br />
-![ButtonView](images/ButtonView.png)
+![ButtonView](Images/ButtonView.png)
 
 DetailUIView<br />
-![DetailUIView](images/DetailUIView.png)
+![DetailUIView](Images/DetailUIView.png)
 
 
 ## Getting rid of the storyboard
@@ -56,14 +56,14 @@ There is a link to the storyboard in the pList file AND in the deployment info. 
 
 ### Remove Deployment info reference
 When you select the target on the left-hand side of the project inspector then you will see a dropdown saying *Main* now (and pay attention) GET RID of it. Another delete will get rid of the link. No problem (right?).
-![DeploymentInfo](images/DeploymentInfo.png)
+![DeploymentInfo](Images/DeploymentInfo.png)
 
 ### Info.plist reference
 In the project inspector there is a rather lovely info.plist file. Select it, and I'll see you just after the image. DON'T DELETE IT - We will modify it.
-![DeletePlistRef](images/DeletePlistRef.png)
+![DeletePlistRef](Images/DeletePlistRef.png)
 The part to delete is buried inside a rather annoying set of drop-down lists. We are looking for the creatively-named **Storyboard Name** and we can delete that line entirely. This will get rid of the entire key and value.
 You'll be left with something like this:
-![DeletedStoryboard](images/DeletedStoryboard.png)
+![DeletedStoryboard](Images/DeletedStoryboard.png)
 Yes - I did find it tricky to select a deleted row, so there isn't too much I can do about that (sorry)
 
 ## Point the code to the rootViewController
@@ -71,7 +71,7 @@ Yes - I did find it tricky to select a deleted row, so there isn't too much I ca
 The function lives in the SceneDelegate.swift file, which can also be selected from the files on the left-hand side of the project. 
 When you've got that selected our target function will be at the top of the file) - just replace it with the following:
 
-![sceneWillConnect](images/sceneWillConnect.png)
+![sceneWillConnect](Images/sceneWillConnect.png)
 
 and...we are job done.
 
