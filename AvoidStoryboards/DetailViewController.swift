@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailViewController.swift
 //  AvoidStoryboards
 //
 //  Created by Steven Curtis on 01/06/2020.
@@ -8,23 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
+class DetailViewController: UIViewController {
     override func loadView() {
-        let view = ButtonView()
+        let view = DetailUIView()
         view.button.addTarget(self, action: #selector(buttonDidTap), for: .touchDown)
         self.view = view
     }
     
-    
     @objc
     private func buttonDidTap() {
-        let controller = DetailViewController()
-        present(controller, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 }
-
