@@ -27,7 +27,6 @@ Once you have created a [Single View Application](https://medium.com/swlh/your-f
 What's the problem? Can you see on the left hand side? Beside the *projects*? We have a Storyboard there - and the whole point is we aren't going to be using it. If we delete it, we won't get any further than a blank screen on the Simulator followed by an **NSInvalidArgumentException**. That's not great at all.
 
 # The step-by-step
-
 I'm going to arrange my classes much like the [loadview article](https://medium.com/@stevenpcurtis.sc/write-clean-code-by-overriding-loadview-ac4f172163d0)
 
 
@@ -76,7 +75,6 @@ When you've got that selected our target function will be at the top of the file
 and...we are job done.
 
 # Conclusion
-
 Phew. There are quite a few steps to go through in order to get rid of that (rather annoying) file. You might be tempted to leave it - but that would be a mistake. You're not shipping extra code that shouldn't be in your bundle, right? 
 Anyway, at least you have the tools to avoid this from now. All the best!
 If you've any questions, comments or suggestions please hit me up on [Twitter](https://twitter.com/stevenpcurtis) 
